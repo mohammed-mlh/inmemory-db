@@ -1,15 +1,40 @@
 {
-  "name": "ts-inmemory-db",
+  "name": "inmemory-db",
   "version": "0.0.1",
-  "description": "A small but real library that mimics MongoDB-like collection API",
+  "description": "A tiny in-memory database written in TypeScript",
+  "private": false,
+  "keywords": [
+    "database",
+    "in-memory",
+    "typescript",
+    "db"
+  ],
   "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "author": "Mohammed Mallahi",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "clean": "rmdir /s /q dist"
   },
   "devDependencies": {
     "typescript": "^6.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
