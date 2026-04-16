@@ -1,5 +1,5 @@
 {
-  "name": "inmemory-db",
+  "name": "@mmallahi/inmemory-db",
   "version": "0.0.1",
   "description": "A tiny in-memory database written in TypeScript",
   "private": false,
