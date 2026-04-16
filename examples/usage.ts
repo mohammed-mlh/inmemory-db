@@ -23,5 +23,18 @@ users.insert({
   age: 20
 });
 
+users.insert({
+  id: "2",
+  name: "John",
+  age: 21
+});
+
+// Update data
+users.update({
+  id: "1",
+  name: "Ali Ahmed",
+  age: 30
+});
+
 // Read data
 console.log(users.findById("1"));

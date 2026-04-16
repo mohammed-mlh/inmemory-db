@@ -3,3 +3,4 @@ dist/
 examples/usage.js
 examples/usage.js.map
 examples/usage.d.ts
+examples/usage.d.ts.map
