@@ -29,6 +29,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
+    "examples": "npm run build && node examples/usage.js",
     "clean": "rmdir /s /q dist"
   },
   "devDependencies": {
